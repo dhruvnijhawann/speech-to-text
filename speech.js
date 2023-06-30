@@ -80,7 +80,7 @@ var messages = {
       recognition.onstart = function(){
         recognizing=true;
         showInfo("speak_now");
-        start_img.src = 'images/mic-animation.gif'
+        start_img.src = 'mic-animation.gif'
       }
   
       recognition.onerror = function(event){
@@ -100,7 +100,7 @@ var messages = {
         if(onend_error){
           return;
         }
-        start_img.src = "images/mic.gif";
+        start_img.src = "mic.gif";
         if(!final_transcript){
           showInfo("start");
           return;
